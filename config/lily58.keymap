@@ -29,9 +29,9 @@
 		
 			bindings = <
 &kp EQUAL &kp N1 &kp N2 &kp N3  &kp N4   &kp N5                           &kp N6     &kp N7  &kp N8    &kp N9    &kp N0 &kp MINUS
-&kp TAB	  &kp Z	 &kp Q	&kp Z	&kp V    &kp Y                            &kp B	     &kp U	 &kp O	   &kp APOS	 &kp C	&kp HASH
+&kp TAB	  &kp Z	 &kp Q	&kp W	&kp V    &kp Y                            &kp B	     &kp U	 &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	  &kp R	 &kp S	&kp A	&kp D	 &kp P                            &kp COMMA  &kp J	 &kp K	   &kp SEMI	 &kp L	&kp SLASH
-&kp RBKT  &kp M	 &kp X	&kp T	&kp E	 &kp BSLH   &kp BSPC	&kp ENTER &kp N	     &kp I	 &kp LBKT  &kp DOT   &kp H	&mo 2
+&kp RBRC  &kp M	 &kp X	&kp T	&kp E	 &kp NUBS   &kp BSPC	&kp ENTER &kp N	     &kp I	 &kp LBKT  &kp DOT   &kp H	&mo 2
                         &kp LALT&kp LCTRL&kp LSHFT	&kp F	    &kp SPACE &kp RSHFT	 &mo 1	 &kp RALT
 			>;
 		};
