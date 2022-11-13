@@ -17,6 +17,91 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+
+    combos {
+        compatible = "zmk,combos";
+        combo_flèche_haut {
+            timeout-ms = <50>;
+            key-positions = <15 27>;
+            bindings = <&kp UP>;
+
+    combos {
+        compatible = "zmk,combos";
+        combo_flèche_bas {
+            timeout-ms = <50>;
+            key-positions = <27 39>;
+            bindings = <&kp DOWN>;
+			
+    combos {
+        compatible = "zmk,combos";
+        combo_flèche_gauche {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp LEFT>;
+
+    combos {
+        compatible = "zmk,combos";
+        combo_flèche_droite {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&kp RIGHT>;
+			
+    combos {
+        compatible = "zmk,combos";
+        combo_supr {
+            timeout-ms = <50>;
+            key-positions = <15 16>;
+            bindings = <&kp DEL>;
+
+    combos {
+        compatible = "zmk,combos";
+        combo_backspace {
+            timeout-ms = <50>;
+            key-positions = <19 20>;
+            bindings = <&kp BSPC>;
+			
+    combos {
+        compatible = "zmk,combos";
+        combo_entr {
+            timeout-ms = <50>;
+            key-positions = <25 26 27 28>;
+            bindings = <&kp ENTER>;	
+
+    combos {
+        compatible = "zmk,combos";
+        combo_entr {
+            timeout-ms = <50>;
+            key-positions = <26 27 28>;
+            bindings = <&kp ENTER>;	
+
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_z {
+            timeout-ms = <50>;
+            key-positions = <36 37>;
+            bindings = <&kp LC(LBRC)>;
+			
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_c {
+            timeout-ms = <50>;
+            key-positions = <38 39>;
+            bindings = <&kp LC(H)>;	
+
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_v {
+            timeout-ms = <50>;
+            key-positions = <39 40>;
+            bindings = <&kp LC(U)>;
+							
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_s {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LC(K)>;
+							
         };
     };
 };
@@ -31,7 +116,7 @@
 &kp EQUAL &kp N1 &kp N2 &kp N3  &kp N4   &kp N5                           &kp N6     &kp N7  &kp N8    &kp N9    &kp N0 &kp MINUS
 &kp TAB	  &kp Z	 &kp Q	&kp W	&kp V    &kp Y                            &kp B	     &kp U	 &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	  &kp R	 &kp S	&kp A	&kp D	 &kp P                            &kp COMMA  &kp J	 &kp K	   &kp SEMI	 &kp L	&kp SLASH
-&kp RBRC  &kp M	 &kp X	&kp T	&kp E	 &kp NUBS   &kp BSPC	&kp ENTER &kp N	     &kp I	 &kp LBKT  &kp DOT   &kp H	&mo 2
+&mo 1	  &kp M	 &kp X	&kp T	&kp E	 &kp NUBS   &kp BSPC	&kp ENTER &kp N	     &kp I	 &kp LBKT  &kp DOT   &kp H	&kp RBRC
                         &kp LALT&kp LCTRL&kp LSHFT	&kp F	    &kp SPACE &kp RSHFT	 &mo 1	 &kp RALT
 			>;
 		};
