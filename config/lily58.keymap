@@ -20,6 +20,7 @@
 
 &mt {
     retro-tap;
+    tapping-term-ms = <1>;
 };
 
 / {
@@ -39,7 +40,7 @@
                 COMBO(enter_un, &kp ENTER, 25 26 27 28)
                 COMBO(enter_two, &kp ENTER, 26 27 28)
 
-                COMBO(ctrl_z, &kp LC(LBRC), 37 38)
+                COMBO(ctrl_z, &kp LC(LBKT), 37 38)
                 COMBO(ctrl_c, &kp LC(H), 38 39)
                 COMBO(ctrl_v, &kp LC(U), 39 40)
                 COMBO(ctrl_s, &kp LC(K), 16 17) 
