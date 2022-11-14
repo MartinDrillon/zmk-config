@@ -17,12 +17,13 @@
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&kp ESC>;
+
     combos {
         compatible = "zmk,combos";
-        combo_flèche_haut {
+        combo_flèche_bas {
             timeout-ms = <50>;
-            key-positions = <15 27>;
-            bindings = <&kp UP>;
+            key-positions = <27 39>;
+            bindings = <&kp DOWN>;
 
         };
     };
