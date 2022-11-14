@@ -21,6 +21,10 @@
 &mt {
     retro-tap;
     tapping-term-ms = <1>;
+    label = "GLOBAL_QUICK_TAP";
+    quick-tap-ms = <125>;
+
+
 };
 
 / {
