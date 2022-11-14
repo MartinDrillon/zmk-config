@@ -18,6 +18,10 @@
     key-positions = <KEYPOS>; \
   };
 
+&mt {
+    tapping-term-ms = <50>;
+};
+
 / {
         combos {
                 compatible = "zmk,combos";
@@ -26,8 +30,8 @@
 
                 COMBO(fleche_haut, &kp UP, 15 27)
                 COMBO(fleche_bas, &kp DOWN, 27 39)
-                COMBO(fleche_gauche, &kp LEFT, 28 29)              
-                COMBO(fleche_droite, &kp RIGHT, 24 25)
+                COMBO(fleche_gauche, &kp LEFT, 24 25)              
+                COMBO(fleche_droite, &kp RIGHT, 28 29)
 
                 COMBO(supr, &kp DEL, 15 16)
                 COMBO(retour, &kp BSPC, 19 20)
@@ -35,10 +39,10 @@
                 COMBO(enter_un, &kp ENTER, 25 26 27 28)
                 COMBO(enter_two, &kp ENTER, 26 27 28)
 
-                COMBO(ctrl_z, &kp LC(LBRC), 36 37)
+                COMBO(ctrl_z, &kp LC(LBRC), 37 38)
                 COMBO(ctrl_c, &kp LC(H), 38 39)
                 COMBO(ctrl_v, &kp LC(U), 39 40)
-                COMBO(ctrl_s, &kp LC(K), 16 17)
+                COMBO(ctrl_s, &kp LC(K), 16 17) 
 
         };
 
@@ -61,9 +65,9 @@
 		
 			bindings = <
 &kp F1    &kp F2     &kp F3     &kp F4  &kp F5    &kp F6                          &kp F7    &kp F8     &kp F9      &kp F10    &kp F11    &kp F12
-&kp TAB	  &kp DLLR	 &kp HASH	&kp AT	&kp N1	  &kp PRCNT			              &kp MINUS	&kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
-&kp LBRC  &kp N2	 &kp N3	    &kp N4	&kp N5	  &kp RBRC			              &kp KP_N0	&kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
-&kp LBKT  &kp TILDE2 &kp BSLH	&kp LT	&kp GT	  &kp RBKT	&kp BSPC	&kp ENTER &kp N0	&kp N9	   &kp N8	   &kp N7	  &kp RA(J)  &kp RA(U)
+&kp TAB	  &kp RA(F)	 &kp LS(GRAVE)	&kp N6	&kp N1	  &kp EQUAL			              &kp MINUS	&kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
+&kp RA(X)  &kp N2	 &kp N3	    &kp N4	&kp N5  &kp RA(C)			              &kp KP_N0	&kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
+&kp RA(N4)  &kp RA(B) &kp RA(BSLH)	&kp RA(N3)	&kp RA(N4)	  &kp RA(N5)	&kp BSPC	&kp ENTER &kp N0	&kp N9	   &kp N8	   &kp N7	  &kp RA(J)  &kp RA(U)
                                 &trans  &trans    &trans    &trans      &trans    &trans    &trans     &trans
 			>;
 		};
