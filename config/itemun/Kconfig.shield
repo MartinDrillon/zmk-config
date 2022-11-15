@@ -1,0 +1,5 @@
+config SHIELD_itemun_g
+    def_bool $(shields_list_contains,itemun_g)
+
+config SHIELD_itemun_d
+    def_bool $(shields_list_contains,itemun_d)
