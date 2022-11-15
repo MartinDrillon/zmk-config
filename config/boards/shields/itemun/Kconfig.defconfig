@@ -1,4 +1,10 @@
-if SHIELD_itemun_g
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+    
+    if SHIELD_itemun_left
 
 config ZMK_KEYBOARD_NAME
     default "itemun"
@@ -8,7 +14,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_itemun_g || SHIELD_itemun_d
+if SHIELD_itemun_left || SHIELD_itemun_right
 
 config ZMK_SPLIT
     default y
