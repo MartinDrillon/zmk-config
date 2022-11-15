@@ -24,21 +24,21 @@
                       
                 COMBO(esc, &kp ESC, 0 1)
 
-                COMBO(fleche_haut, &kp UP, 15 27)
-                COMBO(fleche_bas, &kp DOWN, 27 39)
-                COMBO(fleche_gauche, &kp LEFT, 24 25)              
-                COMBO(fleche_droite, &kp RIGHT, 28 29)
+                COMBO(fleche_haut, &kp UP, 3 15)
+                COMBO(fleche_bas, &kp DOWN, 15 28)
+                COMBO(fleche_gauche, &kp LEFT, 12 13)              
+                COMBO(fleche_droite, &kp RIGHT, 16 17)
 
-                COMBO(supr, &kp DEL, 15 16)
-                COMBO(retour, &kp BSPC, 19 20)
+                COMBO(supr, &kp DEL, 3 4)
+                COMBO(retour, &kp BSPC, 7 8)
                 
-                COMBO(enter_un, &kp ENTER, 25 26 27 28)
-                COMBO(enter_two, &kp ENTER, 26 27 28)
+                COMBO(enter_un, &kp ENTER, 13 14 15 16)
+                COMBO(enter_two, &kp ENTER, 14 15 16)
 
-                COMBO(ctrl_z, &kp LC(LBKT), 37 38)
-                COMBO(ctrl_c, &kp LC(H), 38 39)
-                COMBO(ctrl_v, &kp LC(U), 39 40)
-                COMBO(ctrl_s, &kp LC(K), 16 17) 
+                COMBO(ctrl_z, &kp LC(LBKT), 26 27)
+                COMBO(ctrl_c, &kp LC(H), 27 28)
+                COMBO(ctrl_v, &kp LC(U), 28 29)
+                COMBO(ctrl_s, &kp LC(K), 4 5) 
 
         };
 
