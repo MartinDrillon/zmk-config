@@ -14,10 +14,10 @@
 // |  SHIFT  |    Z    |    X    |    C    |    V    |    B    | CTRL+A  | CTRL+C  |  |  CTRL+V |  CTRL+X |    N    |    M    |    ,    |    .    |    /    |  R CTRL |
 //                               |   GUI   |   DEL   | RETURN  |  SPACE  | ESCAPE  |  |  RETURN |  SPACE  |   TAB   |   BSPC  |  R ALT  |
             bindings = <
-        &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T       &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
-        &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-&kp Z   &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &kp B       &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RCTRL &kp Z 
-                        &kp RALT &kp LGUI  &kp DEL   &kp RET     &kp TAB   &kp BSPC  &kp RALT  &kp RALT
+        &kp TAB	  &kp Z	     &kp Q	   &kp W	 &kp V     &kp Y            &kp B	    &kp U	    &kp O	   &kp APOS	 &kp C	&kp BSLH
+	    &kp G	  &kp R	     &kp S	   &kp A	 &kp D	   &kp P            &kp COMMA   &kp J	    &kp K	   &kp SEMI	 &kp L	&kp SLASH
+&mo 1   &kp RBKT  &kp M	     &kp X	   &kp T	 &kp E	   &kp NUBS         &kp N	    &kp I	    &kp LBKT   &kp DOT   &kp H	&kp RBKT   &mo 1  
+                             &kp LALT  &kp LCTRL &kp LSHFT &kp F	        &kp SPACE   &kp RSHFT   &mo 1	   &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
