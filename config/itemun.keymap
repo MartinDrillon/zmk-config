@@ -4,19 +4,10 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <70>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
-
-
-#define COMBO(NAME, BINDINGS, KEYPOS) \
-  combo_##NAME { \
-    timeout-ms = <80>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-  };
-
 
 / {
         combos {
