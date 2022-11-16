@@ -4,7 +4,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <70>; \
+    timeout-ms = <40>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
@@ -21,7 +21,7 @@
                 COMBO(fleche_droite, &kp RIGHT, 16 17)
 
                 COMBO(supr, &kp DEL, 4 16)
-                COMBO(retour, &kp BSPC, 19 7)
+                COMBO(retour, &kp BSPC, 6 7)
                 COMBO(retour_bis, &kp BSPC, 5 17)
 
                 COMBO(enter_un, &kp ENTER, 13 14 15 16)
