@@ -18,27 +18,27 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(zero, &kp KP_N0, 41 42 13)
-                COMBO(un, &kp KP_N1, 41 42 14 )
-                COMBO(deux, &kp KP_N2, 41 42 15)
-                COMBO(trois, &kp KP_N3, 41 42 16)
-                COMBO(quatre, &kp KP_N4, 41 42 19)
-                COMBO(cinq, &kp KP_N5, 41 42 20)
-                COMBO(six, &kp KP_N6, 41 42 21)
-                COMBO(sept, &kp KP_N7, 41 42 22)
-                COMBO(huit, &kp KP_N8, 41 42 3)
-                COMBO(neuf, &kp KP_N9, 41 42 8)
+//              COMBO(zero, &kp KP_N0, 41 42 13)
+//              COMBO(un, &kp KP_N1, 41 42 14 )
+//              COMBO(deux, &kp KP_N2, 41 42 15)
+//              COMBO(trois, &kp KP_N3, 41 42 16)
+//              COMBO(quatre, &kp KP_N4, 41 42 19)
+//              COMBO(cinq, &kp KP_N5, 41 42 20)
+//              COMBO(six, &kp KP_N6, 41 42 21)
+//              COMBO(sept, &kp KP_N7, 41 42 22)
+//              COMBO(huit, &kp KP_N8, 41 42 3)
+//              COMBO(neuf, &kp KP_N9, 41 42 8)
 
                 COMBO(esc, &kp ESC, 0 1)
 
                 COMBO(fleche_haut, &kp UP, 3 15)
                 COMBO(fleche_bas, &kp DOWN, 15 28)
                 COMBO(fleche_gauche, &kp LEFT, 12 13)              
-                COMBO(fleche_droite, &kp RIGHT, 5 17)
+                COMBO(fleche_droite, &kp RIGHT, 16 17)
 
                 COMBO(supr, &kp DEL, 4 16)
                 COMBO(retour, &kp BSPC, 18 19)
-                COMBO(retour_bis, &kp BSPC, 16 17)
+                COMBO(retour_bis, &kp BSPC, 5 17)
 
                 COMBO(enter_un, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, &kp ENTER, 14 15 16)
@@ -50,7 +50,7 @@
 
                 COMBO(tiret, &kp N8, 32 33)
 
-                COMBO(raise, &mo 2, 40 42)
+                COMBO(raise, &tog 2, 15 16 19 20)
 
         };
 
@@ -63,7 +63,7 @@
           &kp TAB	    &kp Z	     &kp Q	   &kp W	 &kp V     &kp Y            &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
 	        &kp G	      &kp R	     &kp S	   &kp A	 &kp D	   &kp P            &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
 &tog 2    &lt 2 RBKT  &kp M	     &kp X	   &kp T	 &kp E	   &kp NUBS         &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&kp RBKT   &mo 1  
-                               &kp LALT  &kp LCTRL &kp LSHFT &kp F	        &kp SPACE   &kp RSHFT  &mo 1	   &kp RALT
+                               &kp LALT  &kp LCTRL &kp LSHFT &kp F	          &kp SPACE   &kp RSHFT  &mo 1	   &kp RALT
             >;
         };
 
@@ -72,7 +72,7 @@
 			bindings = <
         &kp TAB	    &kp LS(GRAVE) &kp RA(F)	  &kp N6	    &kp N1	 &kp EQUAL			         &kp MINUS  &kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
         &kp RA(X)   &kp N2	      &kp N3	    &kp N4	    &kp N5     &kp RA(C)			       &kp KP_N0  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
-&tog 0  &kp RA(N4)  &kp GRAVE     &kp RA(N2)  &kp RA(N3)  &kp RA(N4) &kp ENTER             &kp N0	  &kp N9     &kp N8	     &kp N7	    &kp RA(J)    &kp RA(U)   &mo 1  
+&tog 2  &kp RA(N4)  &kp GRAVE     &kp RA(N2)  &kp RA(N3)  &kp RA(N4) &kp ENTER             &kp N0	  &kp N9     &kp N8	     &kp N7	    &kp RA(J)    &kp RA(U)   &mo 1  
                                   &trans      &trans      &trans     &trans                &trans     &trans     &trans      &trans
         			>;
 	    	};
@@ -80,10 +80,10 @@
 		raise_layer {
 		
 			bindings = <
-        &kp TAB	    &kp LS(GRAVE) &kp KP_N7	  &kp KP_N8	  &kp KP_N9	 &kp EQUAL			       &kp MINUS  &kp KP_N6   &kp KP_N7    &kp KP_N8   &kp KP_N9	&kp PRCNT
-        &kp RA(X)   &kp KP_N0	    &kp KP_N4	  &kp KP_N5	  &kp KP_N6  &kp RA(C)			       &kp KP_N0  &kp KP_N7   &kp KP_N8    &kp KP_N9   &kp KP_N4  &kp KP_N5
-&tog 0  &kp RA(N4)  &kp GRAVE     &kp KP_N1	  &kp KP_N2	  &kp KP_N3  &kp ENTER             &kp N0	    &kp KP_N1	  &kp KP_N2	   &kp KP_N3   &kp N8	    &kp N7	     
-                                  &trans      &trans      &trans     &kp SPACE                &trans     &trans     &trans      &trans
+        &kp TAB	    &kp LS(GRAVE) &kp KP_N7	  &kp KP_N9	  &kp KP_N8	 &kp EQUAL			       &kp MINUS  &kp KP_N6   &kp KP_N9    &kp KP_N8   &kp KP_N9	&kp PRCNT
+        &kp RA(X)   &kp KP_N4	    &kp KP_N3	  &kp KP_N2	  &kp KP_N1  &kp RA(C)			       &kp KP_N5  &kp KP_N5   &kp KP_N6    &kp KP_N7   &kp KP_N8  &kp KP_N5
+&tog 2  &kp RA(N4)  &kp KP_N8     &kp KP_N7	  &kp KP_N6	  &kp KP_N5  &kp ENTER             &kp N0	    &kp KP_N1	  &kp KP_N2	   &kp KP_N3   &kp N8	    &kp N7	     
+                                  &trans      &trans      &kp SPACE  &kp KP_N0             &trans     &trans      &trans       &trans
         			>;
 	    	};
     };
