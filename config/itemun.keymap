@@ -81,7 +81,7 @@
 		
 			bindings = <
         &kp TAB	    &kp LS(GRAVE) &kp KP_N7	  &kp KP_N8	  &kp KP_N9	 &kp EQUAL			       &kp MINUS  &kp KP_N6   &kp KP_N7    &kp KP_N8   &kp KP_N9	&kp PRCNT
-        &kp RA(X)   &kp KP_N0	    &kp KP_N4	  &kp KP_N5	  &kp KP_N6  &kp RA(C)			       &kp KP_N0  &kp KP_N7   &kjp KP_N8   &kp KP_N9   &kp KP_N4  &kp KP_N5
+        &kp RA(X)   &kp KP_N0	    &kp KP_N4	  &kp KP_N5	  &kp KP_N6  &kp RA(C)			       &kp KP_N0  &kp KP_N7   &kp KP_N8    &kp KP_N9   &kp KP_N4  &kp KP_N5
 &tog 0  &kp RA(N4)  &kp GRAVE     &kp KP_N1	  &kp KP_N2	  &kp KP_N3  &kp ENTER             &kp N0	    &kp KP_N1	  &kp KP_N2	   &kp KP_N3   &kp N8	    &kp N7	     
                                   &trans      &trans      &trans     &kp SPACE                &trans     &trans     &trans      &trans
         			>;
