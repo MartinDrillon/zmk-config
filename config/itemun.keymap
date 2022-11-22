@@ -18,7 +18,7 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(zéro, &kp KP_N0, 41 42 13)
+                COMBO(zero, &kp KP_N0, 41 42 13)
                 COMBO(un, &kp KP_N1, 41 42 14 )
                 COMBO(deux, &kp KP_N2, 41 42 15)
                 COMBO(trois, &kp KP_N3, 41 42 16)
@@ -34,7 +34,7 @@
                 COMBO(fleche_haut, &kp UP, 3 15)
                 COMBO(fleche_bas, &kp DOWN, 15 28)
                 COMBO(fleche_gauche, &kp LEFT, 12 13)              
-                COMBO(fleche_droite, &kp RIGHT, 16 17)
+                COMBO(fleche_droite, &kp RIGHT, 5 17)
 
                 COMBO(supr, &kp DEL, 4 16)
                 COMBO(retour, &kp BSPC, 18 19)
@@ -50,7 +50,7 @@
 
                 COMBO(tiret, &kp N8, 32 33)
 
-                COMBO(lower, &mo 2, 40 42)
+                COMBO(raise, &mo 2, 40 42)
 
         };
 
