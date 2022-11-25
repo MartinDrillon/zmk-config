@@ -18,19 +18,8 @@
         combos {
                 compatible = "zmk,combos";
 
-//              COMBO(zero, &kp KP_N0, 41 42 13)
-//              COMBO(un, &kp KP_N1, 41 42 14 )
-//              COMBO(deux, &kp KP_N2, 41 42 15)
-//              COMBO(trois, &kp KP_N3, 41 42 16)
-//              COMBO(quatre, &kp KP_N4, 41 42 19)
-//              COMBO(cinq, &kp KP_N5, 41 42 20)
-//              COMBO(six, &kp KP_N6, 41 42 21)
-//              COMBO(sept, &kp KP_N7, 41 42 22)
-//              COMBO(huit, &kp KP_N8, 41 42 3)
-//              COMBO(neuf, &kp KP_N9, 41 42 8)
-
-                COMBO(esc, &kp ESC, 0 1)
                 COMBO(circonflexe, &kp Y, 33 34)
+                COMBO(tiret, &kp N8, 32 33)                
 
                 COMBO(fleche_haut, &kp UP, 3 15)
                 COMBO(fleche_bas, &kp DOWN, 15 28)
@@ -40,9 +29,9 @@
                 COMBO(supr, &kp DEL, 4 16)
                 COMBO(retour, &kp BSPC, 18 19)
                 COMBO(retour_bis, &kp BSPC, 5 17)
-
                 COMBO(enter_un, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, &kp ENTER, 14 15 16)
+                COMBO(esc, &kp ESC, 0 1)
 
                 COMBO(ctrl_z, &kp LC(LBKT), 26 27)
                 COMBO(ctrl_c, &kp LC(H), 27 28)
@@ -51,7 +40,7 @@
 
                 COMBO(tiret, &kp N8, 32 33)
 
-                COMBO(raise, &tog 2, 15 16 19 20) 
+                COMBO(lower, &mo 1, 40 42) 
 
         };
 
