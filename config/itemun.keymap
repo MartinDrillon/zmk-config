@@ -2,6 +2,18 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+/ {
+    behaviors {
+        splo: space_lower {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_LOWER";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE>, <&mo 1>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+};
+
 #define COMBO(NAME, TIME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <TIME>; \
@@ -38,7 +50,7 @@
                 COMBO(ctrl_v, 50, &kp LC(U), 28 29)
                 COMBO(ctrl_s, 50, &kp LC(K), 4 5) 
 
-                COMBO(lower, 200, &mo 1, 40 42)
+//                COMBO(lower, 100, &mo 1, 40 42)
 
         };
 
