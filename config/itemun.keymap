@@ -2,9 +2,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, TIME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <TIME>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
@@ -18,29 +18,7 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(circonflexe, &kp Y, 33 34)
-                COMBO(tiret, &kp N8, 32 33)                
-
-                COMBO(fleche_haut, &kp UP, 3 15)
-                COMBO(fleche_bas, &kp DOWN, 15 28)
-                COMBO(fleche_gauche, &kp LEFT, 12 13)              
-                COMBO(fleche_droite, &kp RIGHT, 16 17)
-
-                COMBO(supr, &kp DEL, 4 16)
-                COMBO(retour, &kp BSPC, 18 19)
-                COMBO(retour_bis, &kp BSPC, 5 17)
-                COMBO(enter_un, &kp ENTER, 13 14 15 16)
-                COMBO(enter_two, &kp ENTER, 14 15 16)
-                COMBO(esc, &kp ESC, 0 1)
-
-                COMBO(ctrl_z, &kp LC(LBKT), 26 27)
-                COMBO(ctrl_c, &kp LC(H), 27 28)
-                COMBO(ctrl_v, &kp LC(U), 28 29)
-                COMBO(ctrl_s, &kp LC(K), 4 5) 
-
-                COMBO(tiret, &kp N8, 32 33)
-
-                COMBO(lower, &mo 1, 40 42) 
+                COMBO(circonflexe, 50, &kp Y, 33 34)
 
         };
 
