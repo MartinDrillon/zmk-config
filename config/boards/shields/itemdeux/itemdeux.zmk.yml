@@ -1,6 +1,6 @@
 file_format: "1"
-id: itemun
-name: itemun
+id: itemdeux
+name: itemdeux
 type: shield
 url: https://github.com/MartinDrillon/zmk-config
 requires: [pro_micro]
@@ -8,5 +8,5 @@ exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - itemun_left
-  - itemun_right
+  - itemdeux_left
+  - itemdeux_right

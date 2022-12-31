@@ -30,11 +30,12 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(circonflexe, 70, &kp Y, 33 34)
-                COMBO(tiret, 70, &kp N8, 32 33)                
+                COMBO(circonflexe, 70, &kp Y, 31 32)
+                COMBO(tiret, 70, &kp N8, 30 31)
+                COMBO(w, 70, &kp RBKT, 32 33)                
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
-                COMBO(fleche_bas, 50, &kp DOWN, 15 28)
+                COMBO(fleche_bas, 50, &kp DOWN, 15 26)
                 COMBO(fleche_gauche, 50, &kp LEFT, 12 13)              
                 COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
 
@@ -45,9 +46,9 @@
                 COMBO(enter_two, 80, &kp ENTER, 14 15 16)
                 COMBO(esc, 50, &kp ESC, 0 1)
 
-                COMBO(ctrl_z, 50, &kp LC(LBKT), 26 27)
-                COMBO(ctrl_c, 50, &kp LC(H), 27 28)
-                COMBO(ctrl_v, 50, &kp LC(U), 28 29)
+                COMBO(ctrl_z, 50, &kp LC(LBKT), 24 25)
+                COMBO(ctrl_c, 50, &kp LC(H), 25 27)
+                COMBO(ctrl_v, 50, &kp LC(U), 26 27)
                 COMBO(ctrl_s, 50, &kp LC(K), 4 5) 
 
 //                COMBO(lower, 100, &mo 1, 40 42)
@@ -60,9 +61,9 @@
         default_layer {
 
             bindings = <
-          &kp TAB	    &kp Z	     &kp Q	   &kp W	 &kp V     &kp Y            &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
-	        &kp G	      &kp R	     &kp S	   &kp A	 &kp D	   &kp P            &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
-&tog 2    &lt 2 RBKT  &kp M	     &kp X	   &kp T	 &kp E	   &kp NUBS         &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&mo 2   &mo 1  
+&kp TAB	    &kp Z	     &kp Q	   &kp W	 &kp V     &kp Y            &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
+&kp G	    &kp R	     &kp S	   &kp A	 &kp D	   &kp P            &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
+            &kp M	     &kp X	   &kp T	 &kp E	   &kp NUBS         &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	
                                &kp LALT  &kp LCTRL &kp LSHFT &kp F	          &splo   &kp RSHFT  &mo 1	   &kp RALT
             >;      
         };
@@ -70,10 +71,10 @@
 		lower_layer {
 		
 			bindings = <
-        &kp TAB	    &kp LS(GRAVE) &kp RA(F)	  &kp N6	    &kp N1	 &kp EQUAL			         &kp MINUS  &kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
-        &kp RA(X)   &kp N2	      &kp N3	    &kp N4	    &kp N5     &kp RA(C)			       &kp KP_N0  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
-&tog 2  &kp RA(N4)  &kp GRAVE     &kp RA(N2)  &kp RA(N3)  &kp RA(N4) &kp ENTER             &kp N0	    &kp N9     &kp N8	     &kp N7	    &kp RA(J)    &kp RA(U)   &mo 1  
-                                  &trans      &trans      &trans     &trans                &trans     &trans     &trans      &trans
+&kp TAB	    &kp LS(GRAVE) &kp RA(F)	  &kp N6	    &kp N1 	   &kp EQUAL	  &kp MINUS  &kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
+&kp RA(X)   &kp N2	      &kp N3	  &kp N4	    &kp N5     &kp RA(C)      &kp KP_N0  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
+            &kp GRAVE     &kp RA(N2)  &kp RA(N3)    &kp RA(N4) &kp ENTER      &kp N0	  &kp N9     &kp N8	     &kp N7	    &kp RA(J)   
+                          &trans      &trans        &trans     &trans         &trans     &trans     &trans      &trans
         			>;
 	    	};
 

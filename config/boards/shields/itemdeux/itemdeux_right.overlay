@@ -1,9 +1,9 @@
-// itemun_right.overlay
+// itemdeux_right.overlay
 
-#include "itemun.dtsi"
+#include "itemdeux.dtsi"
 
-&default_transform { // The matrix transform for this board is 7 columns over because the left half is 6 columns wide according to the matrix.
-    col-offset = <7>;
+&default_transform { // The matrix transform for this board is 6 columns over because the left half is 6 columns wide according to the matrix.
+    col-offset = <6>;
 };
 
 &kscan0 {
@@ -14,6 +14,5 @@
         , <&pro_micro 18 GPIO_ACTIVE_HIGH> // col4 in the schematic
         , <&pro_micro 15 GPIO_ACTIVE_HIGH> // col3 in the schematic
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>  // col2 in the schematic
-        , <&pro_micro 4 GPIO_ACTIVE_HIGH>  // col1 in the schematic
         ;
 };
