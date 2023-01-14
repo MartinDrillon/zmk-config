@@ -9,7 +9,7 @@
             label = "SPACE_LOWER";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&mo 1>;
-            mods = <(MOD_LSFT)>;
+            mods = <(MOD_LCTRL)>;
         };
     };
 };
