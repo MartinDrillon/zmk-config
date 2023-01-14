@@ -9,7 +9,7 @@
             label = "SPACE_LOWER";
             #binding-cells = <0>;
             bindings = <&kp SPACE>, <&mo 1>;
-            mods = <(MOD_LCTRL)>;
+            mods = <(MOD_LSFT)>;
         };
     };
 };
@@ -64,7 +64,7 @@
 &kp TAB	    &kp Z	     &kp Q	   &kp W	 &kp V     &kp Y            &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	    &kp R	     &kp S	   &kp A	 &kp D	   &kp P            &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
             &kp M	     &kp X	   &kp T	 &kp E	   &kp NUBS         &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	
-                               &kp LALT  &kp LCTRL &kp LSHFT &kp F	    &splo   &kp RSHFT  &mo 1	   &kp RALT
+                               &kp LALT  &kp LCTRL &kp LSHFT &kp F	          &splo   &kp RSHFT  &mo 1	   &kp RALT
             >;      
         };
 
