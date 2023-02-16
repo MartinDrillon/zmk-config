@@ -11,35 +11,44 @@
 
 
 
-#define COMBO(NAME, BINDINGS, KEYPOS) \
+#define COMBO(NAME, TIME, BINDINGS, KEYPOS) \
   combo_##NAME { \
-    timeout-ms = <50>; \
+    timeout-ms = <TIME>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
   };
-
-
+//         _______________________               ________________________
+//        |0  |1  |2  |3  |4  |5  |              |6  |7  |8  |9  |10 |11 |
+//        |12 |13 |14 |15 |16 |17 |              |18 |19 |20 |21 |22 |23 |
+//        |24 |25 |26 |27 |28 |29 |____      ____|30 |31 |32 |33 |34 |35 |
+//        |36 |37 |38 |39 |40 |41 |42 |      |43 |44 |45 |46 |47 |48 |49 |
+//        ‾‾‾‾‾‾‾‾|50 |51 |52 |53 |‾‾‾‾      ‾‾‾‾|54 |55 |56 |57 |‾‾‾‾‾‾‾‾           
+//                 ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾                ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
 / {
         combos {
                 compatible = "zmk,combos";
-                      
-                COMBO(esc, &kp ESC, 0 1)
 
-                COMBO(fleche_haut, &kp UP, 15 27)
-                COMBO(fleche_bas, &kp DOWN, 27 39)
-                COMBO(fleche_gauche, &kp LEFT, 24 25)              
-                COMBO(fleche_droite, &kp RIGHT, 28 29)
+                COMBO(circonflexe, 70, &kp Y, 20 21)
+                COMBO(tiret, 70, &kp N8, 19 20)
 
-                COMBO(supr, &kp DEL, 15 16)
-                COMBO(retour, &kp BSPC, 19 20)
-                
-                COMBO(enter_un, &kp ENTER, 25 26 27 28)
-                COMBO(enter_two, &kp ENTER, 26 27 28)
+                COMBO(fleche_haut, 50, &kp UP, 15 27)
+                COMBO(fleche_bas, 50, &kp DOWN, 27 39)
+                COMBO(fleche_gauche, 50, &kp LEFT, 24 25)              
+                COMBO(fleche_droite, 50, &kp RIGHT, 28 29)
 
-                COMBO(ctrl_z, &kp LC(LBKT), 37 38)
-                COMBO(ctrl_c, &kp LC(H), 38 39)
-                COMBO(ctrl_v, &kp LC(U), 39 40)
-                COMBO(ctrl_s, &kp LC(K), 16 17) 
+                COMBO(supr, 50, &kp DEL, 16 28)
+                COMBO(retour, 50, &kp BSPC, 30 31)
+                COMBO(retour_bis, 50, &kp BSPC, 17 29)
+                COMBO(enter_un, 80, &kp ENTER, 25 26 27 28)
+                COMBO(enter_two, 80, &kp ENTER, 26 27 28)
+                COMBO(esc, 50, &kp ESC, 12 13)
+
+                COMBO(ctrl_z, 50, &kp LC(LBKT), 37 38)
+                COMBO(ctrl_c, 50, &kp LC(H), 38 39)
+                COMBO(ctrl_v, 50, &kp LC(U), 39 40)
+                COMBO(ctrl_s, 50, &kp LC(K), 16 17) 
+
+//                COMBO(lower, 100, &mo 1, 40 42)
 
         };
 
