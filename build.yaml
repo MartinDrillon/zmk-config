@@ -31,9 +31,8 @@ include:
     # shield: lily58_right
 
   - board: seeeduino_xiao_ble
-    shield: itemtrois_left
+    shield: itemtrois_leftt
   - board: seeeduino_xiao_ble
-    shield: itemtrois_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+    shield: itemtrois_rightt
+
                         
