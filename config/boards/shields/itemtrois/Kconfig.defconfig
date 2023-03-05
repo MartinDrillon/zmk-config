@@ -1,7 +1,7 @@
     if SHIELD_itemtrois_left
 
 config ZMK_KEYBOARD_NAME
-    default "itemtrois"
+    default "trois"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
