@@ -5,7 +5,7 @@
 
 &mmv {
   acceleration-exponent = <1>;
-  time-to-max-speed-ms = <3̂00>;
+  time-to-max-speed-ms = <400>;
   delay-ms = <0>;
 };
 
