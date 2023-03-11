@@ -26,7 +26,7 @@
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 26)
-                COMBO(fleche_gauche, 50, &kp LEFT, 12 13)              
+                COMBO(fleche_gauche, 70, &kp LEFT, 12 13)              
                 COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
 
                 COMBO(supr, 50, &kp DEL, 4 16)
@@ -39,7 +39,7 @@
                 COMBO(ctrl_z, 50, &kp LC(LBKT), 24 25)
                 COMBO(ctrl_c, 50, &kp LC(H), 25 26)
                 COMBO(ctrl_v, 50, &kp LC(U), 26 27)
-                COMBO(ctrl_s, 50, &kp LC(K), 4 5) 
+                COMBO(ctrl_s, 70, &kp LC(K), 4 5) 
 
 //                COMBO(lower, 100, &mo 1, 40 42)
 
