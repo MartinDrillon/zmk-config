@@ -78,10 +78,10 @@
         raise_layer {
 
             bindings = <
-&kp ESC	  &kp Z	     &kp Q	        &mmv MOVE_UP	    &kp LC(K)          &kp LA(F4)                  &kp B	      &kp U	     &kp O &kp APOS	         &kp C	             &kp BSLH
-&kp LEFT	&kp R	     &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT	&kp RIGHT                  &kp COMMA    &mwh SCROLL_LEFT &mwh SCROLL_UP	   &mwh SCROLL_RIGHT	 &kp L	&kp SLASH
-          &kp LA(LS(TAB))       &kp LA(TAB)       &kp RC(LS(TAB))	        &kp RC(TAB)&kp LA(LS(TAB))       &kp LA(TAB)	          &kp NUBS               &kp N	      &kp I	           &mwh SCROLL_DOWN  &kp DOT             &kp H	
-                     &kp LALT       &kp LCTRL         &mkp RCLK       &mkp LCLK	 &mkp RCLK   &kp RSHFT  &kp SPACE   &mo 2      &mo 1	           &kp RALT
+&kp ESC	  &kp Z	          &kp Q	         &mmv MOVE_UP	     &kp LC(K)          &kp LA(F4)                     &kp B	      &kp U	     &kp O &kp APOS	         &kp C	             &kp BSLH
+&kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  	&kp RIGHT                      &kp COMMA    &mwh SCROLL_LEFT &mwh SCROLL_UP	   &mwh SCROLL_RIGHT	 &kp L	&kp SLASH
+          &kp LA(LS(TAB))	&kp LA(TAB)    &kp RC(LS(TAB))   &kp RC(TAB)	      &kp NUBS                       &kp N	      &kp I	           &mwh SCROLL_DOWN  &kp DOT             &kp H	
+                          &kp LALT       &kp LCTRL         &mkp RCLK          &mkp LCLK	  &mo 1   &kp RSHFT  &kp SPACE   &mo 2      &mo 1	           &kp RALT
             >;      
         };
 
