@@ -4,8 +4,8 @@
 #define U_MOUSE_SCROLL_MAX 15
 
 &mmv {
-  acceleration-exponent = <2>;
-  time-to-max-speed-ms = <400>;
+  acceleration-exponent = <0>;
+  time-to-max-speed-ms = <300>;
   delay-ms = <0>;
 };
 
