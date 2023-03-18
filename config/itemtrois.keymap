@@ -31,7 +31,7 @@
                 COMBO(tiret, 70, &kp N8, 30 31)
                 COMBO(w, 70, &kp RBKT, 32 33)                
                 COMBO(underscore, 70, &kp UNDER, 9 10)                
-
+                COMBO(guillemet, 50, &kp N1, 3 4)                
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 26)
@@ -81,8 +81,8 @@
         raise_layer {
 
             bindings = <
-&kp ESC	  &kp Z	          &kp Q	         &mmv MOVE_UP	     &kp LC(K)          &kp LA(F4)                     &kp B	      &kp U	     &kp O &kp APOS	         &kp C	             &kp BSLH
-&kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  	&kp RIGHT                      &kp COMMA    &mwh SCROLL_LEFT &mwh SCROLL_UP	   &mwh SCROLL_RIGHT	 &kp L	&kp SLASH
+&kp ESC	  &kp Z	          &kp Q	         &mmv MOVE_UP	     &kp LC(K)          &kp LA(F4)                     &kp B	      &kp U	     &kp O &mwh SCROLL_UP	         &kp C	             &kp BSLH
+&kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  	&kp RIGHT                      &kp COMMA    &mwh SCROLL_LEFT &mwh SCROLL_DOWN	   &mwh SCROLL_RIGHT	 &kp L	&kp SLASH
           &kp LA(LS(TAB))	&kp LA(TAB)    &kp RC(LS(TAB))   &kp RC(TAB)	      &kp NUBS                       &kp N	      &kp I	           &mwh SCROLL_DOWN  &kp DOT             &kp H	
                           &kp LALT       &kp LCTRL         &mkp RCLK          &mkp LCLK	  &mo 1   &kp RSHFT  &kp SPACE   &mo 2      &mo 1	           &kp RALT
             >;      
