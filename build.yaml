@@ -18,8 +18,8 @@ include:
 #  - board: nice_nano_v2
 #    shield: itemun_right
 
-   - board: nice_nano_v2
-     shield: itemdeux_left
+  - board: nice_nano_v2
+    shield: itemdeux_left
   - board: nice_nano_v2
     shield: itemdeux_right
   - board: nice_nano_v2
