@@ -9,8 +9,6 @@
 #define lower   1
 #define raise   2
 
-
-
 #define COMBO(NAME, TIME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <TIME>; \
@@ -31,7 +29,7 @@
                 COMBO(tiret, 70, &kp N8, 30 31)
                 COMBO(w, 70, &kp RBKT, 32 33)                
                 COMBO(underscore, 70, &kp UNDER, 9 10)                
-                COMBO(guillemet, 50, &kp N1, 3 4)                
+                COMBO(guillemet, 50, &kp N1, 7 8)           
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 26)

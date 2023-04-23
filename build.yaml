@@ -30,10 +30,17 @@ include:
   # - board: nice_nano_v2
     # shield: lily58_right
 
+  # - board: seeeduino_xiao_ble
+  #   shield: itemtrois_left
+  # - board: seeeduino_xiao_ble
+  #   shield: itemtrois_right
+  # - board: seeeduino_xiao_ble
+  #   shield: settings_reset  
+
   - board: seeeduino_xiao_ble
-    shield: itemtrois_left
+    shield: iteMX_left
   - board: seeeduino_xiao_ble
-    shield: itemtrois_right
+    shield: iteMX_right
   - board: seeeduino_xiao_ble
     shield: settings_reset  
 
