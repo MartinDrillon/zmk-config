@@ -4,10 +4,10 @@
 // #define  A     (A)  // A
 // #define  B   (Q)    // B
 
-#define DLR  GRAVE  // $
-#define DQUO N1    // "
-// #define LDAQ N2    // «
-// #define RDAQ N3    // »
+#define DLLR  GRAVE  // $
+#define DQT N1    // "
+#define LDAQ N2    // «
+#define RDAQ N3    // »
 // #define LPRN R4    // (
 // #define RPRN N5    // )
 // #define AT   N6    // @
