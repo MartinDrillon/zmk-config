@@ -8,11 +8,11 @@
 #define DQT N1    // "
 #define LDAQ N2    // «
 #define RDAQ N3    // »
-// #define LPRN R4    // (
-// #define RPRN N5    // )
-// #define AT   N6    // @
-// #define PLUS N7    // +
-// #define MINS N8    // -
+#define LPAR R4    // (
+#define RPAR N5    // )
+#define AT   N6    // @
+#define PLUS N7    // +
+#define MINUS N8    // -
 // #define SLSH N9    // /
 // #define ASTR N0    // *
 // #define EQL  MINUS // =
