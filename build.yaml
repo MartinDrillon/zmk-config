@@ -30,19 +30,19 @@ include:
   # - board: nice_nano_v2
     # shield: lily58_right
 
-  # - board: seeeduino_xiao_ble
-  #   shield: itemtrois_left
-  # - board: seeeduino_xiao_ble
-  #   shield: itemtrois_right
-  # - board: seeeduino_xiao_ble
-  #   shield: settings_reset  
-
   - board: seeeduino_xiao_ble
-    shield: iteMX_left
+    shield: itemtrois_left
   - board: seeeduino_xiao_ble
-    shield: iteMX_right
+    shield: itemtrois_right
   - board: seeeduino_xiao_ble
     shield: settings_reset  
+
+  # - board: seeeduino_xiao_ble
+  #   shield: iteMX_left
+  # - board: seeeduino_xiao_ble
+  #   shield: iteMX_right
+  # - board: seeeduino_xiao_ble
+  #   shield: settings_reset  
 
   # - board: seeeduino_xiao_ble
 #     shield: totem_left
