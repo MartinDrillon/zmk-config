@@ -4,7 +4,7 @@
 // #define  A     (A)  // A
 // #define  B   (Q)    // B
 
-// #define DLR  GRAVE  // $
+#define DLR  GRAVE  // $
 #define DQUO N1    // "
 // #define LDAQ N2    // «
 // #define RDAQ N3    // »
