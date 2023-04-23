@@ -1,6 +1,5 @@
 #pragma once
-#include "keys.h"
-
+#include <dt-bindings/zmk/keys.h>
 
 #define  A     (A)  // A
 #define  B   (Q)    // B
