@@ -258,8 +258,7 @@
 #define RCUR (RIGHT_BRACE) // WARNING: DEPRECATED (DO NOT USE)
 
 /* Keyboard \ and | (Backslash and Pipe) */
-#define BACKSLASH (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))
-#define BSLH (BACKSLASH)
+#define CC (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE))
 
 /* Keyboard | (Pipe) */
 #define PIPE (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_BACKSLASH_AND_PIPE)))
@@ -493,9 +492,8 @@
 #define KP_DOT (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYPAD_PERIOD_AND_DELETE))
 
 /* Keyboard Non-US \ and | (Non-us Backslash and Pipe) */
-#define NON_US_BACKSLASH                                                                           \
+#define ECIRC                                                                           \
     (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE))
-#define NON_US_BSLH (NON_US_BACKSLASH)
 
 /* Keyboard Pipe */
 #define PIPE2 (LS(ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_NON_US_BACKSLASH_AND_PIPE)))
