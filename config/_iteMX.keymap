@@ -39,7 +39,7 @@
                 COMBO(retour_bis, 50, &kp BSPC, 5 17)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, 80, &kp ENTER, 14 15 16)
-                COMBO(esc, 50, &kp ESC, 1 2)
+                COMBO(esc, 50, &kp ESC, 0 1)
                 COMBO(caps_lock, 50, &kp CAPS, 38 43)
 
                 COMBO(ctrl_z, 50, &kp LC(LBKT), 25 26)
