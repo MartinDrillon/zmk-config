@@ -28,7 +28,7 @@
                 COMBO(circonflexe, 70, &kp Y, 8 9)
                 COMBO(tiret, 70, &kp N8, 7 8)
                 COMBO(underscore, 70, &kp UNDER, 31 32)                
-                COMBO(guillemet, 50, &kp N1, 32 33)           
+                COMBO(w, 70, &kp RBKT, 32 33)                
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 26)
@@ -61,7 +61,7 @@
 &kp TAB	  &kp Z	     &kp Q	   &kp W	     &kp V     &kp Y                  &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P                  &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
 &kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&kp N8
-                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &mo 1   &mo 2  &kp SPACE   &kp RSHFT  &kp LWIN	 &kp RALT
+                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &mo 1   &lt 2 BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
             >;      
         };
 
@@ -69,8 +69,8 @@
 		
 			bindings = <
 &kp TAB	    &kp LS(GRAVE) &kp RA(F)	  &kp N6	    &kp N1 	   &kp EQUAL	  &kp MINUS  &kp KP_N6  &kp KP_N7   &kp KP_N8  &kp KP_N9	 &kp PRCNT
-&kp RA(Y)   &kp N2	      &kp N3	  &kp N4	    &kp N5     &kp RA(X)      &kp KP_N0  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
-&kp GRAVE   &kp GRAVE     &kp RA(N2)  &kp RA(N3)    &kp RA(N4) &kp ENTER      &kp N0	  &kp N9     &kp N8	     &kp N7	    &kp RA(J)   &kp GRAVE
+&kp RA(X)   &kp N2	      &kp N3	  &kp N4	    &kp N5     &kp RA(EQUAL)      &kp KP_N0  &kp KP_N1  &kp KP_N2   &kp KP_N3  &kp KP_N4	 &kp KP_N5
+&kp RA(N4)   &kp GRAVE     &kp RA(N2)  &kp RA(N3)   &kp RA(W) &kp RA(N5)      &kp N0	  &kp N9     &kp N8	     &kp N7	    &kp RA(J)   &kp GRAVE
                           &trans      &trans        &trans     &trans  &trans     &trans  &trans     &trans     &trans      &trans
         			>;
 	    	};
@@ -81,7 +81,7 @@
 &kp ESC	  &kp Z	          &kp Q	         &mmv MOVE_UP	     &kp LC(K)          &kp LA(F4)                     &kp B	      &kp U	     &kp O &mwh SCROLL_UP	         &kp C	             &kp BSLH
 &kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  	&kp RIGHT                      &kp COMMA    &mwh SCROLL_LEFT &mwh SCROLL_DOWN	   &mwh SCROLL_RIGHT	 &kp L	&kp SLASH
 &kp GRAVE  &kp LA(LS(TAB))	&kp LA(TAB)    &kp RC(LS(TAB))   &kp RC(TAB)	      &kp NUBS                       &kp N	      &kp I	           &mwh SCROLL_DOWN  &kp DOT             &kp H	&kp GRAVE
-                          &kp LALT       &kp LCTRL         &mkp RCLK          &mkp LCLK	  &mo 1   &kp RSHFT  &kp SPACE   &mo 2      &mo 1	           &kp RALT
+                          &kp LALT       &kp LCTRL         &mkp RCLK          &mkp LCLK	  &mo 1   &trans  &trans   &trans      &trans	           &trans
             >;      
         };
 

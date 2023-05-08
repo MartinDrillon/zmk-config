@@ -1,7 +1,7 @@
     if SHIELD_iteMX_left
 
 config ZMK_KEYBOARD_NAME
-    default "iteMX"
+    default "Clavier Mathias"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
