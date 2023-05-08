@@ -39,7 +39,7 @@
                 COMBO(retour_bis, 50, &kp BSPC, 5 17)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, 80, &kp ENTER, 14 15 16)
-                COMBO(esc, 50, &kp ESC, 1 2)
+                COMBO(esc, 50, &kp ESC, 0 1)
                 COMBO(caps_lock, 50, &kp CAPS, 38 43)
 
                 COMBO(ctrl_z, 50, &kp LC(LBKT), 25 26)
@@ -60,7 +60,7 @@
 &kp TAB	  &kp Z	     &kp Q	   &kp W	     &kp V     &kp Y                  &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P              &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
 &kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&mo 2
-                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
+                     &kp LALT  &kp LCMD   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp RCMD
             >;      
         };
 
