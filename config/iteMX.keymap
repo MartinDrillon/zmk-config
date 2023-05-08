@@ -31,7 +31,7 @@
                 COMBO(w, 70, &kp RBKT, 32 33)                
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
-                COMBO(fleche_bas, 50, &kp DOWN, 15 26)
+                COMBO(fleche_bas, 50, &kp DOWN, 15 27)
                 COMBO(fleche_gauche, 70, &kp LEFT, 12 13)              
                 COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
 
