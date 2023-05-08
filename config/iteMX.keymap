@@ -60,7 +60,7 @@
 &kp TAB	  &kp Z	     &kp Q	   &kp W	     &kp V     &kp Y                  &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
 &kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P                  &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
 &kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&kp N8
-                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &mo 1   &lt 2 BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
+                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &lt 2 BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
             >;      
         };
 
