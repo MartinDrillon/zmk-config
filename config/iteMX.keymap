@@ -35,7 +35,7 @@
                 COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
 
                 COMBO(supr, 50, &kp DEL, 4 16)
-                COMBO(retour, 50, &kp BSPC, 18 19)
+                COMBO(retour, 50, &kp BSPC, 7 19)
                 COMBO(retour_bis, 50, &kp BSPC, 5 17)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, 80, &kp ENTER, 14 15 16)
@@ -58,9 +58,9 @@
 
             bindings = <
 &kp TAB	  &kp Z	     &kp Q	   &kp W	     &kp V     &kp Y                  &kp B	      &kp U	     &kp O	   &kp APOS	 &kp C	&kp BSLH
-&kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P                  &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
-&kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&kp N8
-                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &lt 2 BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
+&kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P              &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
+&kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&mo 2
+                     &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
             >;      
         };
 
