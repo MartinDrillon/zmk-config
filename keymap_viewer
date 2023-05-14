@@ -37,7 +37,7 @@ layers:
   - [ESPACE, SHIFT, ALTGR 🍎ATL, WIN 🍎CMD]
 
   Nav:
-  - [ALT F4, "", "", "MOUSE ↑", '', 'WHEEL ↑']
+  - [ALT F4, "", "WHEEL ←", "MOUSE ↑", 'WHEEL →', 'WHEEL ↑']
   - ['F1', 'F2', 'F3', 'F4', 'F5', 'F6']
   - ['', '', 'MOUSE ←', 'MOUSE ↓', 'MOUSE →', 'WHEEL ↓']
   - ['F7', 'F8', 'F9', 'F10', 'F11', 'F12']
@@ -71,7 +71,7 @@ combos:
 
 - {p: [32, 33], k: ^, l: [Bepo]}
 - {p: [31, 32], k: -, l: [Bepo]}
-- {p: [9, 10], k: w, l: [Bepo]}
+- {p: [7, 8], k: w, l: [Bepo]}
 
 - {p: [3, 15], k: ↑, l: [Bepo]}
 
