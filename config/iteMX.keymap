@@ -41,10 +41,10 @@
                 COMBO(esc, 50, &kp ESC, 0 1)
                 COMBO(caps_lock, 50, &kp CAPS, 38 43)
 
-                COMBO(ctrl_z, 50, &kp LC(LBKT), 25 26)
-                COMBO(ctrl_c, 50, &kp LC(H), 26 27)
-                COMBO(ctrl_v, 50, &kp LC(U), 27 28)
-                COMBO(ctrl_s, 70, &kp LC(K), 4 5) 
+                COMBO(ctrl_z, 50, &kp LG(LBKT), 25 26)
+                COMBO(ctrl_c, 50, &kp LG(H), 26 27)
+                COMBO(ctrl_v, 50, &kp LG(U), 27 28)
+                COMBO(ctrl_s, 70, &kp LG(K), 4 5) 
 
 //                COMBO(lower, 100, &mo 1, 40 42)
 
@@ -60,11 +60,8 @@
 &kp G	    &kp R	     &kp S	   &kp A	     &kp D	   &kp P              &kp COMMA   &kp J	     &kp K	   &kp SEMI	 &kp L	&kp SLASH
 &kp RBKT  &kp M	     &kp X	   &kp T	     &kp E	   &kp NUBS               &kp N	      &kp I	     &kp LBKT  &kp DOT   &kp H	&mo 2
                      &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
-                     
             >;      
         };
-//                      &kp LCTRL  &kp LCMD   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp RCMD
-//                      &kp LALT  &kp LCTRL   &kp LSHFT &kp F	 &lt 1 DEL   &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
 
 		lower_layer {
 		
@@ -82,7 +79,7 @@
 &kp ESC	  &kp Z	          &mwh SCROLL_LEFT	         &mmv MOVE_UP	     &mwh SCROLL_RIGHT          &mwh SCROLL_UP              &kp F1	     &kp F2	    &kp F3   &kp F4	 &kp F5	 &kp F6
 &kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                                &kp F7    &kp F8      &kp F9	&kp F10	 &kp F11	&kp F12
 &kp RC(LS(TAB))  &kp RC(LS(LEFT))	&kp RC(LS(UP))    &kp RC(LS(DOWN))   &kp RC(LS(RIGHT))	      &kp RC(TAB)                   &kp N	     &kp I	    &kp B   &kp DOT  &kp H	&kp GRAVE
-                          &trans       &trans         &mkp RCLK          &mkp LCLK	  &trans   &trans  &trans   &trans      &trans	           &trans
+                          &trans       &trans         &mkp RCLK          &mkp LCLK	  &trans   &trans  &trans   &trans      &trans	           &trans           &trans
             >;      
         };
 
