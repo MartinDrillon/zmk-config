@@ -1,0 +1,98 @@
+layout:
+  ortho_layout:
+    split: true
+    rows: 3
+    columns: 6
+    thumbs: 5
+
+layers:
+  Bepo:
+  - [TAB, À, B, É, ". :", "^ !"]
+  - [K, V, L, M, X, Ç]
+  - [", ;", O, U, A, I, J]
+  - ['G', T, S, N, R, F]
+  - ['W', Q, Y, È, P, Ê]
+  - ["’ ?", D, 'Z', H, C, Nav]
+  - - ALT 🍎CTRL
+    - CTRL 🍎CMD
+    - SHIFT 
+    - E
+    - {t: DEL, h: Sym}
+    - RETOUR
+  - [ESPACE, SHIFT, ALTGR 🍎ATL, WIN 🍎CMD]
+  Sym:
+  - [TAB, "#", "€", "@", '"', "%"]
+  - ['=', '6', '7', '8', '9', '$']
+  - ["{", '«', '»', '(', ')', '}']
+  - ["0", '1', '2', '3', '4', '5']
+  - ["[", '<', '>', '°', '_', ']']
+  - ["*", '+', '/', '|', '\', 'ᵉˣᵖ']
+
+  - - ALT 🍎CTRL
+    - CTRL 🍎CMD
+    - SHIFT 
+    - E
+    - {t: DEL, h: Sym}
+    - RETOUR
+  - [ESPACE, SHIFT, ALTGR 🍎ATL, WIN 🍎CMD]
+
+  Nav:
+  - [ALT F4, "", "", "MOUSE ↑", '', 'WHEEL ↑']
+  - ['F1', 'F2', 'F3', 'F4', 'F5', 'F6']
+  - ['', '', 'MOUSE ←', 'MOUSE ↓', 'MOUSE →', 'WHEEL ↓']
+  - ['F7', 'F8', 'F9', 'F10', 'F11', 'F12']
+  - ['CHROME ←', 'SÉLEC ←', 'SÉLEC ↓', 'SÉLEC ↑', 'SÉLEC →', 'CHROME →']
+  - ['', '', '', '', '', '']
+  - - ALT 🍎CTRL
+    - CTRL 🍎CMD
+    - CLIC D
+    - CLIC G
+    - {t: DEL, h: Sym}
+    - RETOUR
+  - [ESPACE, SHIFT, ALTGR 🍎ATL, WIN 🍎CMD]
+
+  Alt:
+  - ['', '', '', '', '', '']
+  - ['~', '', '', '', '', '']
+  - ["'", 'œ', 'ù', 'æ', '¨', '']
+  - ['', '', '', '', '', '']
+  - ['', '', '', '', '', '']
+  - ['', '', '', '', '', '']
+
+  - - ALT 🍎CTRL
+    - CTRL 🍎CMD
+    - SHIFT 
+    - E
+    - {t: DEL, h: Sym}
+    - RETOUR
+  - [ESPACE, SHIFT, ALTGR 🍎ATL, WIN 🍎CMD]
+
+combos:
+
+- {p: [32, 33], k: ^, l: [Bepo]}
+- {p: [31, 32], k: -, l: [Bepo]}
+- {p: [9, 10], k: w, l: [Bepo]}
+
+- {p: [3, 15], k: ↑, l: [Bepo]}
+
+- {p: [15, 27], k: ↓, l: [Bepo]}
+
+- {p: [12, 13], k: ←, l: [Bepo]}
+
+- {p: [16, 17], k: →, l: [Bepo]}
+
+- {p: [4, 16], k: RETOUR, l: [Bepo]}
+
+- {p: [7, 19], k: DEL, l: [Bepo]}
+
+- {p: [13, 14, 15, 16], k: ENTER, l: [Bepo]}
+- {p: [0, 1], k: ESC, a: top, l: [Bepo]}
+- {p: [38, 43], k: CAPS, a: bottom, l: [Bepo]}
+
+
+- {p: [25, 26], k: CTRL Z, l: [Bepo]}
+- {p: [26, 27], k: CTRL C, l: [Bepo]}
+
+- {p: [27, 28], k: CTRL V, l: [Bepo]}
+
+- {p: [4, 5], k: CTRL S, a: top, l: [Bepo]}
