@@ -79,7 +79,7 @@
         raise_layer {
 
             bindings = <
-&kp LA(F4)	  &kp Z	          &mwh SCROLL_LEFT	         &mmv MOVE_UP	     &mwh SCROLL_RIGHT          &mwh SCROLL_UP              &kp F1	     &kp F2	    &kp F3   &kp F4	 &kp F5	 &kp F6
+&kp LA(F4)	  &out OUT_TOG          &mwh SCROLL_LEFT	         &mmv MOVE_UP	     &mwh SCROLL_RIGHT          &mwh SCROLL_UP              &kp F1	     &kp F2	    &kp F3   &kp F4	 &kp F5	 &kp F6
 &bt BT_CLR	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                                &kp F7    &kp F8      &kp F9	&kp F10	 &kp F11	&kp F12
 &kp RC(LS(TAB))  &kp RC(LS(LEFT))	&kp RC(LS(UP))    &kp RC(LS(DOWN))   &kp RC(LS(RIGHT))	      &kp RC(TAB)                   &kp N	     &kp I	    &kp B   &kp DOT  &kp H	&kp GRAVE
                           &trans       &trans         &mkp RCLK          &mkp LCLK	  &trans   &trans  &trans   &trans      &trans	           &trans
