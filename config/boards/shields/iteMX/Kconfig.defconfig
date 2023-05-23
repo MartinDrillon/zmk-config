@@ -1,7 +1,7 @@
     if SHIELD_iteMX_right
 
 config ZMK_KEYBOARD_NAME
-    default "ClaMa"
+    default "Clavier Flore"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
