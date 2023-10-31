@@ -1,4 +1,4 @@
-    if SHIELD_iteMX_right
+    if SHIELD_iteMX_left
 
 config ZMK_KEYBOARD_NAME
     default "ClaMa"
@@ -14,3 +14,4 @@ config ZMK_SPLIT
     default y
 
 endif
+
