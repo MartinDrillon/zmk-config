@@ -32,7 +32,7 @@
 
                 COMBO(circonflexe, 70, &kp Y, 8 9)
                 COMBO(tiret, 70, &kp N8, 7 8)
-                COMBO(_underscore_, 70, &kp BP_UNDER, 31 32)                
+                COMBO(underscore, 70, &kp BP_UNDER, 31 32)                
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 27)
