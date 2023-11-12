@@ -143,7 +143,7 @@
 #define BP_EXCL (BP_EXCLAMATION)
 
 #define BP_SEMICOLON (LS(BP_COMMA))     // ;
-#define SEMI (BP_SEMICOLON)
+#define BP_SEMI (BP_SEMICOLON)
 
 #define BP_COLON (LS(SINGLE_QUOTE))     // :
 
