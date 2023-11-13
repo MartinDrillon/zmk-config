@@ -47,7 +47,7 @@
 #define BP_O (R)                        // O
 
 #define BP_EGRAVE (T)                   // È
-#define BP_EGRV
+#define BP_EGRV (BP_EGRAVE)
 
 #define BP_CARET (Y)                    // ^ (dead)
 
