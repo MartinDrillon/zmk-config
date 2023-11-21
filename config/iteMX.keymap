@@ -48,6 +48,11 @@
 
 //                COMBO(lower, 100, &mo 1, 40 42)
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
 
         };
 
@@ -60,7 +65,7 @@
 &kp TAB	        &kp BP_AGRV	  &kp BP_B    &kp BP_EAIGU      &kp BP_DOT     &kp DEL                              &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp BP_CCED
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                             &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
 &kp BP_W        &kp BP_Q	  &kp BP_Y    &kp BP_EGRV	    &kp BP_P	   &kp BP_ECIR                          &kp BP_QMARK	&kp BP_D	    &kp BP_H    &kp BP_C    &kp BP_Z	&mo 2
-                              &kp LALT    &kp LCTRL         &kp LSHFT      &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &kp RSHFT  &kp RALT	 &kp LWIN
+                              &kp LALT    &kp LCTRL         &sk LSHFT      &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &sk RSHFT  &kp RALT	 &kp LWIN
             >;      
     };
     
