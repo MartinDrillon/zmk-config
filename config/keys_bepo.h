@@ -51,9 +51,9 @@
 
 #define BP_CARET (Y)                    // ^ (dead)
 
-#define BP_D (U)                        // V
+#define BP_V (U)                        // V
 
-#define BP_V (I)                        // D
+#define BP_D (I)                        // D
 
 #define BP_L (O)                        // L
 
