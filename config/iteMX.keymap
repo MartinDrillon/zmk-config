@@ -9,6 +9,12 @@
 #define lower   1
 #define raise   2
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 #define COMBO(NAME, TIME, BINDINGS, KEYPOS) \
   combo_##NAME { \
     timeout-ms = <TIME>; \
@@ -47,12 +53,6 @@
                 COMBO(ctrl_s, 70, &kp LC(BP_S), 4 5) 
 
 //                COMBO(lower, 100, &mo 1, 40 42)
-
-&sk {
-    release-after-ms = <1000>;
-    quick-release;
-    /delete-property/ ignore-modifiers;
-};
 
         };
 
