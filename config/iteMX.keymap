@@ -4,6 +4,7 @@
 #include "mouse.dtsi"
 #include <dt-bindings/zmk/outputs.h>
 
+//shift circonflexe pour deux point sur le I
 
 #define default 0
 #define lower   1
@@ -43,7 +44,7 @@
         combos {
                 compatible = "zmk,combos";
 
-                COMBO(circonflexe, 70, &kp BP_CIRC, 8 9)
+                COMBO(circonflexe, 70, &kp BP_CARET, 8 9)
                 COMBO(tiret, 70, &kp BP_MINUS, 7 8)
                 COMBO(underscore, 70, &kp BP_UNDER, 31 32)                
 
