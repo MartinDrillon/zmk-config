@@ -24,13 +24,13 @@
             #binding-cells = <0>;
             bindings = <&kp BP_QMARK>, <&kp BP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-
-            APOGUI: apos_guillement {
-                compatible = "zmk,behavior-mod-morph";
-                label = "APOSTROPHE_GUILLEMET";
-                #binding-cells = <0>;
-                bindings = <&kp BP_APOS>, <&kp BP_DQT>;
-                mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        APOGUI: apos_guillement {
+            compatible = "zmk,behavior-mod-morph";
+            label = "APOSTROPHE_GUILLEMET";
+            #binding-cells = <0>;
+            bindings = <&kp BP_APOS>, <&kp BP_DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 };
