@@ -25,17 +25,6 @@
 
 / {
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BP_W>, <&wh>;
-        };
-    };
-
-/ {
-    behaviors {
         AHOH: exclamation_question {
             compatible = "zmk,behavior-mod-morph";
             label = "EXCLAMATION_QUESTION";
