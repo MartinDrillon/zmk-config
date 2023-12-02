@@ -24,6 +24,13 @@
             #binding-cells = <0>;
             bindings = <&kp BP_QMARK>, <&kp BP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+
+            APOGUI: apos_guillement {
+                compatible = "zmk,behavior-mod-morph";
+                label = "APOSTROPHE_GUILLEMET";
+                #binding-cells = <0>;
+                bindings = <&kp BP_APOS>, <&kp BP_DQT>;
+                mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 };
@@ -50,7 +57,7 @@
 
                 COMBO(fleche_haut, 50, &kp UP, 3 15)
                 COMBO(fleche_bas, 50, &kp DOWN, 15 27)
-                COMBO(fleche_gauche, 70, &kp LEFT, 12 13)              
+                COMBO(fleche_gauche, 70, &kp LEFT, 12 13)           
                 COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
 
                 COMBO(retour, 50, &kp BSPC, 4 16)
@@ -75,9 +82,9 @@
         default_layer {
 
             bindings = <
-&kp TAB	        &kp BP_AGRV	  &kp BP_B    &kp BP_EAIGU      &kp BP_DOT     &kp BP_APOS                              &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp BP_CCED
+&kp TAB	        &kp BP_AGRV	  &kp BP_B    &kp BP_EAIGU      &kp BP_DOT     &AHOH                                &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp BP_CCED
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                             &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&kp BP_W        &kp BP_Q	  &kp BP_Y    &kp BP_EGRV	    &kp BP_P	   &kp BP_ECIR                          &AHOH	&kp BP_D	    &kp BP_H    &kp BP_C    &kp BP_Z	&mo 2
+&kp BP_W        &kp BP_Q	  &kp BP_Y    &kp BP_EGRV	    &kp BP_P	   &kp BP_ECIR                          &APOGUI	    &kp BP_D	    &kp BP_H    &kp BP_C    &kp BP_Z	&mo 2
                               &kp LALT    &kp LCTRL         &sk LSHFT      &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &sk RSHFT  &kp RALT	 &kp LWIN
             >;      
     };
@@ -85,7 +92,7 @@
     lower_layer {
 		
         bindings = <
-&kp BP_AMPS &kp BP_HASH &kp BP_EURO	  &kp BP_AT 	&kp BP_DQT 	    &kp BP_DLLR 	            &kp BP_PRCNT   &kp BP_6    &kp BP_7    &kp BP_8    &kp BP_9	 &kp BP_EXP
+&kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_EQUAL	            &kp BP_PRCNT   &kp BP_6    &kp BP_7    &kp BP_8    &kp BP_9	 &kp BP_EXP
 &kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp BP_0       &kp BP_1    &kp BP_2    &kp BP_3    &kp BP_4	 &kp BP_5
 &kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_UNDER    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
                     &trans        &trans        &trans          &trans    &trans  &trans    &trans         &trans       &trans      &trans
