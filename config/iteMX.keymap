@@ -11,31 +11,6 @@
 #define nump 3
 
 / {
-    macros {
-        wh: wh {
-            label = "ZM_zed_em_kay";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp BP_W &kp BP_H>
-;
-        };
-    };
-};
-
-/ {
-    behaviors {
-        tapwh: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BP_W>, <&wh>;
-        };
-    };
-};
-
-/ {
     behaviors {
         AHOH: exclamation_question {
             compatible = "zmk,behavior-mod-morph";
