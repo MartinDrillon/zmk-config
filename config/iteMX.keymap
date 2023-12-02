@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include "mouse.dtsi"
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/keys.h>
 
 #define default 0
 #define lower 1
