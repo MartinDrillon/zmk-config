@@ -27,6 +27,9 @@
             bindings = <&kp BP_DAIGU>, <&kp BP_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+    };
+};
+
 &sk {
     release-after-ms = <1000>;
     quick-release;
