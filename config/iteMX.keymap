@@ -25,7 +25,7 @@
 
 / {
     behaviors {
-        td0: tap_dance_0 {
+        tapwh: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
@@ -142,7 +142,8 @@
 &trans        &trans	  &kp LEFT     &kp DOWN    &kp RIGHT     &trans                     &trans        &trans	  &trans     &trans     &trans     &trans 
 &trans        &trans	  &kp HOME     &kp INS     &kp END       &trans                     &trans        &trans	  &trans     &trans     &trans     &trans
                           &trans     &trans     &trans     &trans          &trans  &trans   &trans        &trans     &trans      &trans
+                >;      
             };
-            
+    
         };
     };
