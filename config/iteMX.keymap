@@ -94,7 +94,7 @@
         bindings = <
 &kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp BP_6    &kp BP_7    &kp BP_8    &kp BP_9	 &kp BP_EXP
 &kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp BP_0       &kp BP_1    &kp BP_2    &kp BP_3    &kp BP_4	 &kp BP_5
-&kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_TILD     &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
+&kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_UNDER    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
                     &trans        &trans        &trans          &trans    &trans  &trans    &trans         &trans       &trans      &trans
                 >;      
         };
