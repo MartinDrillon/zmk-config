@@ -49,24 +49,6 @@
     };
 };
 
-/ {
-    behaviors {
-        TAP_WH: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BP_W>, <&WH>;
-        };
-        TAP_MAJ_WH: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BP_W>, <&WH>;
-        };
-    };
-};
 
 / {
     behaviors {
@@ -81,7 +63,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "MAJUSCULE_BP_WH";
             #binding-cells = <0>;
-            binding = <&TAP_WH>, <&TAP_MAJ_WH>;
+            binding = <&kp BP_APOS>, <&kp BP_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         APOGUI: apos_guillement {
