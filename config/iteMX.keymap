@@ -19,7 +19,7 @@
 
 / {
     macros {
-        WH: WH {
+        MACRO_WH: WH {
             label = "WH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -27,7 +27,7 @@
                 = <&macro_tap &kp BP_W &kp BP_H>
                 ;
         };
-        MAJ_WH: MAJ_WH {
+        MACRO_MAJ_WH: MAJ_WH {
             label = "MAJ_WH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -50,12 +50,19 @@
             tapping-term-ms = <100>;
             bindings = <&kp BP_W>, <&WH>;
         };
-        MAJ_TAP_WH: tap_dance_1 {
+        TAP_MAJ_WH: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
             bindings = <&kp BP_W>, <&MAJ_WH>;
+        };
+        TAP_ING: tap_dance_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp BP_G>, <&MAJ_WH>;
         };
     };
 };
@@ -76,7 +83,7 @@
             bindings = <&kp BP_APOS>, <&kp BP_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        WH_MAJ_WH: WH_MAJ_MH {
+        WH: WH_MAJ_MH {
             compatible = "zmk,behavior-mod-morph";
             label = "WH_MAJ_WH";
             #binding-cells = <0>;
@@ -127,7 +134,7 @@
         default_layer {
 
             bindings = <
-&kp TAB	        &kp ESC	      &kp BP_B    &TAP_WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp DEL
+&kp TAB	        &kp ESC	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp DEL
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                      &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
 &sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                     &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
