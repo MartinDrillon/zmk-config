@@ -95,7 +95,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "WH_MAJ_WH";
             #binding-cells = <0>;
-            bindings = <&TAP_WH>, <&MAJ_TAP_WH>;
+            bindings = <&TAP_WH>, <&TAP_MAJ_WH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
