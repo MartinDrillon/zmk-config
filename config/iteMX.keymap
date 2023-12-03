@@ -32,7 +32,17 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_tap &kp BP_W &kp BP_H>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+        MAJW: MAJW {
+            label = "MAJUSCULE_W";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp BP_W>
                 , <&macro_release &kp LSHFT>
                 ;
         };
@@ -60,9 +70,9 @@
             bindings = <&kp BP_QMARK>, <&kp BP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        MAJWH: majuscule_wh {
+        BP_WH: majuscule_bp_wh {
             compatible = "zmk,behavior-mod-morph";
-            label = "MAJUSCULE_WH";
+            label = "MAJUSCULE_BP_WH";
             #binding-cells = <0>;
             binding = <&TAPWH>, <&kp BP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
