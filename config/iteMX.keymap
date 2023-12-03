@@ -26,26 +26,6 @@
                 = <&macro_tap &kp BP_W &kp BP_H>
                 ;
         };
-        MAJWH: MAJWH {
-            label = "MAJUSCULE_WH";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp BP_W &kp BP_H>
-                , <&macro_release &kp LSHFT>
-                ;
-        };
-        MAJW: MAJW {
-            label = "MAJUSCULE_W";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp BP_W>
-                , <&macro_release &kp LSHFT>
-                ;
-        };
     };
 };
 
@@ -54,13 +34,6 @@
         TAP_WH: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp BP_W>, <&WH>;
-        };
-        TAP_MAJ_WH: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp BP_W>, <&WH>;
@@ -75,13 +48,6 @@
             label = "EXCLAMATION_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp BP_QMARK>, <&kp BP_EXCL>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        BP_WH: majuscule_bp_wh {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MAJUSCULE_BP_WH";
-            #binding-cells = <0>;
-            binding = <&TAP_WH>, <&TAP_MAJ_WH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         APOGUI: apos_guillement {
