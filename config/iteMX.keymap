@@ -139,9 +139,9 @@
             nump_layer {
     
                 bindings = <
-&trans        &trans	  &kp PG_UP     &kp UP     &kp PG_DOWN   &trans                     &trans        &trans	  &trans     &trans     &trans     &trans 
-&trans        &trans	  &kp LEFT     &kp DOWN    &kp RIGHT     &trans                     &trans        &trans	  &trans     &trans     &trans     &trans 
-&trans        &trans	  &kp HOME     &kp INS     &kp END       &trans                     &trans        &trans	  &trans     &trans     &trans     &trans
+&trans        &trans	  &trans    &trans   &trans   &trans                     &trans        &trans	  &trans     &trans     &trans     &trans 
+&trans        &trans	  &trans     &trans    &trans     &trans                     &trans        &trans	  &trans     &trans     &trans     &trans 
+&trans        &trans	  &trans     &trans     &trans       &trans                     &trans        &trans	  &trans     &trans     &trans     &trans
                           &trans     &trans     &trans     &trans          &trans  &trans   &trans        &trans     &trans      &trans
             };
 
