@@ -245,7 +245,7 @@
 
 #define BP_ELLP (RA(BP_X))               // …
 
-#define BP_TILDE (RA(BP_DOT))            // ~
+#define BP_TILDE (RA(BP_K))              // ~
 #define BP_TILD (BP_TILD)
 
 #define BP_IQUE (RA(BP_QMARK))          // ¿
