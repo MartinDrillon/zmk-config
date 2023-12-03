@@ -50,6 +50,13 @@
             tapping-term-ms = <100>;
             bindings = <&kp BP_W>, <&WH>;
         };
+        MAJ_TAP_WH: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp BP_W>, <&MAJ_WH>;
+        };
     };
 };
 
