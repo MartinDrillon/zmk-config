@@ -81,13 +81,7 @@
                 COMBO(tiret, 70, &kp BP_MINUS, 7 8)
                 COMBO(underscore, 70, &kp BP_UNDER, 31 32)                
 
-                COMBO(fleche_haut, 50, &kp UP, 3 15)
-                COMBO(fleche_bas, 50, &kp DOWN, 15 27)
-                COMBO(fleche_gauche, 70, &kp LEFT, 12 13)           
-                COMBO(fleche_droite, 50, &kp RIGHT, 16 17)
-
-                COMBO(retour, 50, &kp BSPC, 4 16)
-                COMBO(supr, 50, &kp DEL, 5 17)
+                COMBO(supr, 50, &kp DEL, 4 16)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
                 COMBO(enter_two, 80, &kp ENTER, 14 15 16)
                 COMBO(esc, 50, &kp ESC, 0 1)
@@ -140,8 +134,8 @@
     
                 bindings = <
 &kp TAB	        &kp ESC	      &kp PAGE_UP &kp UP     &kp PAGE_DOWN     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp DEL
-&kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                      &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                     &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
+&kp BP_COMMA	&kp BP_O	   &kp LEFT     &kp DOWN    &kp RIGHT	   &kp BP_J                      &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
+&sl 2           &kp BP_Q	  &kp HOME     &kp INS     &kp END	   &kp ENTER                     &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
                               &kp LCTRL   &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
                 >;      
             };
