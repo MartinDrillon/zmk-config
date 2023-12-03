@@ -136,13 +136,13 @@
                 >;      
             };
     
-            navteste_layer {
+            navtest_layer {
     
                 bindings = <
-    &kp ESC	  &kp Z	          &mwh SCROLL_LEFT	         &mmv MOVE_UP	     &mwh SCROLL_RIGHT          &mwh SCROLL_UP              &kp F1	     &kp F2	    &kp F3   &kp F4	 &kp F5	 &kp F6
-    &kp LEFT	&kp R	          &mmv MOVE_LEFT &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN                                &kp F7    &kp F8      &kp F9	&kp F10	 &kp F11	&kp F12
-    &kp RC(LS(TAB))  &kp DLLR	&kp RC(LS(UP))    &kp RC(LS(DOWN))   &kp RC(LS(RIGHT))	      &kp RC(TAB)                   &kp N	     &kp I	    &kp B   &kp DOT  &kp H	&kp GRAVE
-                              &trans       &trans         &mkp RCLK          &mkp LCLK	  &trans   &trans  &trans   &trans      &trans	           &trans           &trans
+&kp TAB	        &kp ESC	      &kp PG_UP     &kp UP     &kp PG_DOWN     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp DEL
+&kp BP_COMMA	&kp BP_O	  &kp LEFT     &kp DOWN    &kp RIGHT	   &kp BP_J                      &kp BP_G        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
+&sl 2           &kp BP_Q	  &kp HOME     &kp INS     &kp END	   &kp ENTER                     &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
+                              &kp LCTRL   &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
                 >;      
             };
     
