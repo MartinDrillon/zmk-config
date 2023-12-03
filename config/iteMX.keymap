@@ -18,20 +18,30 @@
 
 / {
     macros {
-        WH: zed_em_kay {
-            label = "ZM_zed_em_kay";
+        WH: WH {
+            label = "WH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
                 = <&macro_tap &kp BP_W &kp BP_H>
                 ;
         };
+        MAJWH: MAJWH {
+            label = "MAJUSCULE_WH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp BP_W &kp BP_H>
+                , <&macro_release &kp LSHFT>
+                
+        };
     };
 };
 
 / {
     behaviors {
-        td0: tap_dance_0 {
+        TAPWH: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
@@ -48,6 +58,13 @@
             label = "EXCLAMATION_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp BP_QMARK>, <&kp BP_EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        MAJWH: majuscule_wh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MAJUSCULE_WH";
+            #binding-cells = <0>;
+            binding = <&TAPWH>, <&kp BP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         APOGUI: apos_guillement {
