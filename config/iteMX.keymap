@@ -33,11 +33,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp BP_C>
-                , <&macro_release &kp LSHFT>
-                , <&macro_tap &kp H>
-                ;
+            = <&macro_tap &kp BP_W &kp LS(BP_H)>
+            ;
         };
         MACRO_ING: ING {
             label = "ING";
