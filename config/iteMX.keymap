@@ -18,13 +18,25 @@
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        WH: zed_em_kay {
             label = "ZM_zed_em_kay";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp W &kp H &kp K>
+                = <&macro_tap &kp BP_W &kp BP_H>
                 ;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BP_W>, <&WH>;
         };
     };
 };
