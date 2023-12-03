@@ -76,6 +76,13 @@
             bindings = <&kp BP_APOS>, <&kp BP_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        WH_MAJ_WH: WH_MAJ_MH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "WH_MAJ_WH";
+            #binding-cells = <0>;
+            bindings = <&TAP_WH>, <&MAJ_TAP_WH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
