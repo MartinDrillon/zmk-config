@@ -38,6 +38,14 @@
                 , <&macro_tap &kp H>
                 ;
         };
+        MACRO_ING: ING {
+            label = "ING";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp BP_I &kp BP_N &kp BP_G>
+                ;
+        };
     };
 };
 
@@ -48,21 +56,21 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp BP_W>, <&WH>;
+            bindings = <&kp BP_W>, <&MACRO_WH>;
         };
         TAP_MAJ_WH: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp BP_W>, <&MAJ_WH>;
+            bindings = <&kp BP_W>, <&MACRO_MAJ_WH>;
         };
         TAP_ING: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
             tapping-term-ms = <100>;
-            bindings = <&kp BP_G>, <&MAJ_WH>;
+            bindings = <&kp BP_G>, <&MACRO_ING>;
         };
     };
 };
