@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-            = <&macro_tap &kp BP_W &kp LS(BP_H)>
+            = <&macro_tap &kp LS(BP_W) &kp BP_H>
             ;
         };
         MACRO_ING: ING {
@@ -96,6 +96,13 @@
             bindings = <&TAP_WH>, <&TAP_MAJ_WH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        DEIN: DEL_INSERT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL_INSERT";
+            #binding-cells = <0>;
+            bindings = <&kp DEL>, <&kp INS>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
@@ -117,7 +124,9 @@
 
                 COMBO(circonflexe, 70, &kp BP_CARET, 8 9)
                 COMBO(tiret, 70, &kp BP_MINUS, 7 8)
-                COMBO(underscore, 70, &kp BP_UNDER, 31 32)                
+                COMBO(underscore, 70, &kp BP_UNDER, 31 32)
+                COMBO(accent_aigu, 70, &kp BP_DAIGU, 3 4)                
+                
 
                 COMBO(supr, 50, &kp DEL, 4 16)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
@@ -125,9 +134,10 @@
                 COMBO(esc, 50, &kp ESC, 0 1)
                 COMBO(caps_lock, 70, &kp CAPS, 38 43)
 
-                COMBO(ctrl_z, 50, &kp LC(BP_Z), 25 26)
+                COMBO(ctrl_z, 50, &kp LC(BP_Z), 27 28)
                 COMBO(ctrl_c, 50, &kp LC(BP_C), 26 27)
-                COMBO(ctrl_v, 50, &kp LC(BP_V), 27 28)
+                COMBO(ctrl_v, 50, &kp LC(BP_V), 28 29)
+                COMBO(ctrl_x, 50, &kp LC(BP_X), 25 26)
                 COMBO(ctrl_s, 70, &kp LC(BP_S), 4 5) 
                 COMBO(shift_fdix, 70, &kp LS(F10), 6 18) 
 
@@ -142,9 +152,9 @@
         default_layer {
 
             bindings = <
-&kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&kp DEL
+&kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &kp BP_APOS 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
