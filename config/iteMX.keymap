@@ -86,7 +86,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "APOSTROPHE_GUILLEMET";
             #binding-cells = <0>;
-            bindings = <&kp BP_DAIGU>, <&kp BP_DQT>;
+            bindings = <&kp BP_APOS>, <&kp BP_DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         WH: WH_MAJ_MH {
@@ -154,7 +154,7 @@
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &kp BP_APOS 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
