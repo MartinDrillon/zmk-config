@@ -60,6 +60,22 @@
             = <&macro_tap &kp LS(BP_C) &kp BP_H>
             ;
         };
+        MACRO_AN: AN {
+            label = "AN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp BP_A &kp BP_N>
+                ;
+        };
+        MACRO_MAJ_AN: MAJ_AN {
+            label = "MAJ_AN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+            = <&macro_tap &kp LS(BP_A) &kp BP_N>
+            ;
+        };
     };
 };
 
@@ -100,6 +116,20 @@
             tapping-term-ms = <250>;
             bindings = <&kp BP_C>, <&MACRO_MAJ_CH>;
         };
+        TAP_AN: tap_dance_5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_5";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp BP_A>, <&MACRO_AN>;
+        };
+        TAP_MAJ_AN: tap_dance_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_6";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp BP_A>, <&MACRO_MAJ_AN>;
+        };
     };
 };
 
@@ -138,6 +168,13 @@
             label = "CH_MAJ_CH";
             #binding-cells = <0>;
             bindings = <&TAP_CH>, <&TAP_MAJ_CH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        AN: AN_MAJ_AN {
+            compatible = "zmk,behavior-mod-morph";
+            label = "AN_MAJ_AN";
+            #binding-cells = <0>;
+            bindings = <&TAP_AN>, <&TAP_MAJ_AN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -190,8 +227,8 @@
 
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
-&kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &WH	        &sl 2
+&kp BP_COMMA	&kp BP_O	  &kp BP_U    &AN	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &CH	        &sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
