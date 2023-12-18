@@ -44,6 +44,22 @@
                 = <&macro_tap &kp BP_I &kp BP_N &kp BP_G>
                 ;
         };
+        MACRO_CH: CH {
+            label = "CH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp BP_C &kp BP_H>
+                ;
+        };
+        MACRO_MAJ_CH: MAJ_CH {
+            label = "MAJ_CH";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+            = <&macro_tap &kp LS(BP_C) &kp BP_H>
+            ;
+        };
     };
 };
 
@@ -69,6 +85,20 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp BP_G>, <&MACRO_ING>;
+        };
+        TAP_CH: tap_dance_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp BP_C>, <&MACRO_CH>;
+        };
+        TAP_MAJ_CH: tap_dance_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_4";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp BP_C>, <&MACRO_MAJ_CH>;
         };
     };
 };
@@ -103,6 +133,13 @@
             bindings = <&kp DEL>, <&kp INS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        CH: CH_MAJ_CH {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CH_MAJ_CH";
+            #binding-cells = <0>;
+            bindings = <&TAP_CH>, <&TAP_MAJ_CH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 };
 
@@ -126,7 +163,7 @@
                 COMBO(tiret, 70, &kp BP_MINUS, 7 8)
                 COMBO(underscore, 70, &kp BP_UNDER, 31 32)
                 COMBO(accent_aigu, 70, &kp BP_DAIGU, 3 4)                
-                
+                COMBO(c_cedille, 70, &kp BP_CCED, 32 33 34)
 
                 COMBO(supr, 50, &kp DEL, 4 16)
                 COMBO(enter_un, 80, &kp ENTER, 13 14 15 16)
@@ -154,7 +191,7 @@
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &kp BP_A	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &WH	        &sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
@@ -165,7 +202,7 @@
 &kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp BP_6    &kp BP_7    &kp BP_8    &kp BP_9	 &kp BP_EXP
 &kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp BP_0       &kp BP_1    &kp BP_2    &kp BP_3    &kp BP_4	 &kp BP_5
 &kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_TILDE    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
-                        &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
+                        &kp LCTRL     &kp LALT      &sk LSHFT       &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
 >;      
         };
 
