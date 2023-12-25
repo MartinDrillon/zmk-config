@@ -236,8 +236,8 @@
     lower_layer {
 		
         bindings = <
-&kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp N6    &kp N7    &kp N8    &kp N9	 &kp BP_EXP
-&kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp N0       &kp N1    &kp N2    &kp N3    &kp N4	 &kp N5
+&kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9	 &kp BP_EXP
+&kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp KP_N0       &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4	 &kp KP_N5
 &kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_TILDE    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
                         &kp LCTRL     &kp LALT      &sk LSHFT       &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
 >;      
