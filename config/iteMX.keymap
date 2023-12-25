@@ -228,7 +228,7 @@
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &AN	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &CH	        &sl 2
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &CH    &kp BP_C	        &sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
@@ -236,8 +236,8 @@
     lower_layer {
 		
         bindings = <
-&kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp BP_6    &kp BP_7    &kp BP_8    &kp BP_9	 &kp BP_EXP
-&kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp BP_0       &kp BP_1    &kp BP_2    &kp BP_3    &kp BP_4	 &kp BP_5
+&kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp N6    &kp N7    &kp N8    &kp N9	 &kp BP_EXP
+&kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp N0       &kp N1    &kp N2    &kp N3    &kp N4	 &kp N5
 &kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_TILDE    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
                         &kp LCTRL     &kp LALT      &sk LSHFT       &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
 >;      
