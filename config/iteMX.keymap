@@ -107,14 +107,14 @@
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp BP_C>, <&MACRO_CH>;
+            bindings = <&kp BP_H>, <&MACRO_CH>;
         };
         TAP_MAJ_CH: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp BP_C>, <&MACRO_MAJ_CH>;
+            bindings = <&kp BP_H>, <&MACRO_MAJ_CH>;
         };
         TAP_AN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
