@@ -228,8 +228,8 @@
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &AN	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &TH    &kp BP_C	        &sl 2
-                            &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
+&mo 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &TH    &kp BP_C	        &mo 2
+                            &kp LCTRL    &kp LALT         &kp LSHFT      &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &mo 3  &kp RALT	 &kp LWIN
             >;      
     };
     
@@ -239,7 +239,7 @@
 &kp BP_AMPS &kp BP_DLLR &kp BP_EURO	  &kp BP_HASH	&kp BP_AT 	    &kp BP_PRCNT	            &kp BP_EQUAL   &kp KP_N6    &kp KP_N7    &kp KP_N8    &kp KP_N9	 &kp BP_EXP
 &kp BP_LBRC &kp BP_GGA	&kp BP_GDR	  &kp BP_LPAR	&kp BP_RPAR     &kp BP_RBRC                 &kp KP_N0       &kp KP_N1    &kp KP_N2    &kp KP_N3    &kp KP_N4	 &kp KP_N5
 &kp BP_LBKT &kp BP_LT   &kp BP_GT     &kp BP_DRNGA  &kp BP_TILDE    &kp BP_RBKT                 &kp BP_STAR	   &kp BP_PLUS &kp BP_FSLH	&kp BP_PIPE	&kp BP_BSLH  &kp BP_IND
-                        &kp LCTRL     &kp LALT      &sk LSHFT       &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
+                        &kp LCTRL     &kp LALT      &kp LSHFT       &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &mo 3  &kp RALT	 &kp LWIN
 >;      
         };
 
@@ -260,7 +260,7 @@
 &kp ESC	        &kp TAB	               &kp PAGE_UP &kp UP     &kp PAGE_DOWN     &AHOH                       &kp BP_K	    &kp BP_V	    &kp C_BRIGHTNESS_INC	&kp C_VOLUME_UP	&kp BP_X	&kp DEL
 &kp BP_COMMA	&kp RC(LS(LEFT))	   &kp LEFT     &kp DOWN    &kp RIGHT	   &kp RC(LS(RIGHT))             &kp BP_G       &kp PRINTSCREEN	    &kp C_BRIGHTNESS_DEC	&kp C_VOLUME_DOWN	&kp BP_R	&kp BP_F
 &sl 2           &kp BP_Q	            &kp HOME     &kp INS     &kp END	   &kp ENTER                     &APOGUI 	    &kp BP_D	    &kp BP_Z    &kp BP_H    &kp BP_C	&sl 2
-                                        &kp LCTRL   &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
+                                        &kp LCTRL   &kp LALT         &kp LSHFT      &kp BP_E	 &mo 1    &kp BSPC  &kp SPACE   &mo 3  &kp RALT	 &kp LWIN
                 >;      
             };
     
