@@ -44,20 +44,20 @@
                 = <&macro_tap &kp BP_I &kp BP_N &kp BP_G>
                 ;
         };
-        MACRO_CH: CH {
-            label = "CH";
+        MACRO_TH: TH {
+            label = "TH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp BP_C &kp BP_H>
+                = <&macro_tap &kp BP_T &kp BP_H>
                 ;
         };
-        MACRO_MAJ_CH: MAJ_CH {
-            label = "MAJ_CH";
+        MACRO_MAJ_TH: MAJ_TH {
+            label = "MAJ_TH";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-            = <&macro_tap &kp LS(BP_C) &kp BP_H>
+            = <&macro_tap &kp LS(BP_T) &kp BP_H>
             ;
         };
         MACRO_AN: AN {
@@ -102,19 +102,19 @@
             tapping-term-ms = <250>;
             bindings = <&kp BP_G>, <&MACRO_ING>;
         };
-        TAP_CH: tap_dance_3 {
+        TAP_TH: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp BP_H>, <&MACRO_CH>;
+            bindings = <&kp BP_H>, <&MACRO_TH>;
         };
-        TAP_MAJ_CH: tap_dance_4 {
+        TAP_MAJ_TH: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp BP_H>, <&MACRO_MAJ_CH>;
+            bindings = <&kp BP_H>, <&MACRO_MAJ_TH>;
         };
         TAP_AN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
@@ -163,11 +163,11 @@
             bindings = <&kp DEL>, <&kp INS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        CH: CH_MAJ_CH {
+        TH: TH_MAJ_TH {
             compatible = "zmk,behavior-mod-morph";
-            label = "CH_MAJ_CH";
+            label = "TH_MAJ_TH";
             #binding-cells = <0>;
-            bindings = <&TAP_CH>, <&TAP_MAJ_CH>;
+            bindings = <&TAP_TH>, <&TAP_MAJ_TH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         AN: AN_MAJ_AN {
@@ -228,7 +228,7 @@
             bindings = <
 &kp ESC	        &kp TAB	      &kp BP_B    &WH          &kp BP_DOT     &AHOH                         &kp BP_K	    &kp BP_V	    &kp BP_L	&kp BP_M	&kp BP_X	&DEIN
 &kp BP_COMMA	&kp BP_O	  &kp BP_U    &AN	        &kp BP_I	   &kp BP_J                 &TAP_ING        &kp BP_T	    &kp BP_S	&kp BP_N	&kp BP_R	&kp BP_F
-&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &CH    &kp BP_C	        &sl 2
+&sl 2           &kp BP_Q	  &kp BP_Y    &kp BP_DGRAVE	    &kp BP_P	   &kp ENTER                &APOGUI 	    &kp BP_D	    &kp BP_Z    &TH    &kp BP_C	        &sl 2
                             &kp LCTRL    &kp LALT         &sk LSHFT      &kp BP_E	 &sl 1    &kp BSPC  &kp SPACE   &sl 3  &kp RALT	 &kp LWIN
             >;      
     };
