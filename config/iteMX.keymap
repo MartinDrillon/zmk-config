@@ -85,49 +85,49 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_W>, <&MACRO_WH>;
         };
         TAP_MAJ_WH: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_W>, <&MACRO_MAJ_WH>;
         };
         TAP_ING: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_2";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_G>, <&MACRO_ING>;
         };
         TAP_CH: tap_dance_3 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_3";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_H>, <&MACRO_CH>;
         };
         TAP_MAJ_CH: tap_dance_4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_4";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_H>, <&MACRO_MAJ_CH>;
         };
         TAP_AN: tap_dance_5 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_5";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_A>, <&MACRO_AN>;
         };
         TAP_MAJ_AN: tap_dance_6 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_6";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <150>;
             bindings = <&kp BP_A>, <&MACRO_MAJ_AN>;
         };
     };
@@ -153,7 +153,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "WH_MAJ_WH";
             #binding-cells = <0>;
-            bindings = <&TAP_WH>, <&TAP_MAJ_WH>;
+            bindings = <&TAP_WH>, <&MACRO_MAJ_WH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DEIN: DEL_INSERT {
@@ -167,14 +167,14 @@
             compatible = "zmk,behavior-mod-morph";
             label = "CH_MAJ_CH";
             #binding-cells = <0>;
-            bindings = <&TAP_CH>, <&TAP_MAJ_CH>;
+            bindings = <&TAP_CH>, <&MACRO_MAJ_CH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         AN: AN_MAJ_AN {
             compatible = "zmk,behavior-mod-morph";
             label = "AN_MAJ_AN";
             #binding-cells = <0>;
-            bindings = <&TAP_AN>, <&TAP_MAJ_AN>;
+            bindings = <&TAP_AN>, <&MACRO_MAJ_AN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
