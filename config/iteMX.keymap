@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/keys.h>
 
-//shift circonflexe pour deux point sur le I
+//shift circonflexe pour deux point sur le I1
 
 #define default 0
 #define lower 1
